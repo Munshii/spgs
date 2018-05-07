@@ -46,7 +46,7 @@
 
 	<%
 		Class.forName("com.mysql.jdbc.Driver");
-		String connURL = "jdbc:mysql://127.0.0.1/assignment?user=root&password=s9812063g";		
+		String connURL = "jdbc:mysql://jws-app-mysql:3306/assignment?user=user&password=password";		
 		Connection conn = DriverManager.getConnection(connURL);
 		
 		String id = request.getParameter("hiddenID");

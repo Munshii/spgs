@@ -56,7 +56,7 @@ int Quantity=Integer.parseInt(request.getParameter("Quantity"));
 int [] GenreID= new int [Genre.length];
 
 Class.forName("com.mysql.jdbc.Driver");
-String connURL = "jdbc:mysql://127.0.0.1/assignment?user=root&password=s9812063g";
+String connURL = "jdbc:mysql://jws-app-mysql:3306/assignment?user=user&password=password";
 Connection conn=DriverManager.getConnection(connURL);
 String sql1="INSERT INTO game (GameTitle,Company,ReleaseDate,Description,Price,ImageLocation,PreOwned,Quantity) VALUES(?,?,?,?,?,?,?,?)";
 PreparedStatement pstmt1=conn.prepareStatement(sql1);
